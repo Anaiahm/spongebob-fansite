@@ -1,32 +1,29 @@
 /* Contact Page Stylesheet */
 
-/* Section Styling: Contact Info/Form
-    Adds shadow and a pink dashed border for a fun, playful look */
+
+/* Flex container for side-by-side layout */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap; /* Wraps to next line on smaller screens */
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+/* Shared section box styling */
 .section {
-    max-width: 750px;
-    margin: 50px auto;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 25px;
     padding: 30px 40px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border: 3px dashed #F06292;
+    flex: 1 1 400px; /* Minimum width 400px, auto stretch */
+    max-width: 450px;
 }
 
-/* Contact Info List Styling: remove bullets from <ul> */
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-
-.contact-info li {
-    margin: 15px 0;
-    font-size: 1.05em;
-    line-height: 1.4em; /* Slightly increased line height for readability */
-}
-
-/* Form Styling */
+/* Contact form styles*/
 form {
     margin-top: 20px;
     text-align: center;
@@ -44,7 +41,7 @@ input, textarea {
 }
 
 textarea {
-    resize: none; /* Disable resizing for better design control */
+    resize: none;
     height: 90px;
 }
 
