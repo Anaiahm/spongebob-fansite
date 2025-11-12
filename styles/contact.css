@@ -1,0 +1,155 @@
+
+body {
+    background-image: url('../assets/bikinibottom.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Comic Sans MS', cursive; /* Fun, playful font */
+    text-align: center;
+    color: #3E2723;
+    overflow-x: hidden; /* Prevent horizontal scroll from bubbles */
+    margin: 0; /* Remove default margin and padding */
+    padding: 0;
+}
+
+/* Animated Header, makes it large, colorful and glowing */
+h1 {
+    font-size: 2.8em;
+    margin-top: 50px;
+    text-shadow: 2px 2px 6px #fff;
+    animation: floaty 3s ease-in-out infinite;
+    color: #D84315;
+}
+
+/* Floating Animation */
+@keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+h2 {
+    color: #C2185B;
+    text-shadow: 1px 1px #fff;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.1em;
+    max-width: 650px;
+    margin: 15px auto;
+    line-height: 1.6em;
+}
+
+/* Section Styling: Contact Info/Form
+    Adds shadow and a pink dashed border for a fun, playful look */
+.section {
+    max-width: 750px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 25px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 3px dashed #F06292;
+}
+
+/* Contact Info List Styling: remove bullets from <ul> */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.contact-info li {
+    margin: 15px 0;
+    font-size: 1.05em;
+    line-height: 1.4em; /* Slightly increased line height for readability */
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input, textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #FFB300;
+    font-family: inherit;
+    background: #FFFDE7;
+    font-size: 1em;
+}
+
+textarea {
+    resize: none; /* Disable resizing for better design control */
+    height: 90px;
+}
+
+/* Submit Button Styling with Hover Animation */
+button {
+    background: #FFB300;
+    color: #4E342E;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: scale(1.1) rotate(-3deg);
+    background: #F06292;
+    color: white;
+}
+
+/* Navigation Styling */
+nav {
+    margin: 40px 0 20px;
+}
+
+nav a {
+    color: #D84315;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #F06292;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #4E342E;
+    padding-bottom: 30px;
+}
+
+/* Bubble Animation */
+.bubble {
+    position: fixed;
+    bottom: -60px;
+    width: 25px;
+    height: 25px;
+    background: rgba(0, 162, 255, 0.5);
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 162, 255, 0.6); /* Glow effect */
+    z-index: 0; 
+    animation: rise 10s infinite ease-in;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) scale(1.8);
+        opacity: 0;
+    }
+}
