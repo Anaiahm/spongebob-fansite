@@ -1,0 +1,38 @@
+ body {
+        background-image: url('../assets/bikinibottom.png');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Comic Sans MS', cursive; /* Fun, playful font */
+        text-align: center;
+        color: #3E2723;
+        overflow-x: hidden; /* Prevent horizontal scroll from bubbles */
+        margin: 0; /* Remove default margin and padding */
+        padding: 0;
+    }
+
+ h1 {
+        font-size: 2.8em;
+        margin-top: 50px;
+        text-shadow: 2px 2px 6px #fff;
+        animation: floaty 3s ease-in-out infinite;
+        color: #D84315;
+    }
+
+    /* Floating Animation */
+    @keyframes floaty {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+
+    h2 {
+        color: #C2185B;
+        text-shadow: 1px 1px #fff;
+        margin-top: 50px;
+    }
+
+    p {
+        font-size: 1.1em;
+        max-width: 650px;
+        margin: 15px auto;
+        line-height: 1.6em;
+    }
