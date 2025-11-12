@@ -1,5 +1,9 @@
 /* Contact Page Stylesheet */
 
+h1 {
+    color: #F06292; /* Pink color overrides orange */
+    text-shadow: 2px 2px 10px #fff;
+}
 
 /* Flex container for side-by-side layout */
 .flex-container {
@@ -12,7 +16,6 @@
     max-width: 1000px;
 }
 
-/* Shared section box styling */
 .section {
     background: rgba(255, 255, 255, 0.85);
     border-radius: 25px;
