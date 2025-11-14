@@ -1,35 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="stylesheet" href="../styles/gallery.css">
-  <title>Images of SpongeBob</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/gallery.css" />
+    <title>Images of SpongeBob</title>
+  </head>
+  <body>
     <nav>
-      <a href="../index.html">Home</a> |
-      <a href="./gallery.html">Gallery</a> |
+      <a href="../index.html">Home</a> | <a href="./gallery.html">Gallery</a> |
       <a href="./facts.html">Facts</a> |
       <a href="./contact.html">Contact</a>
     </nav>
     <h1>SpongeBob SquarePants and Friends</h1>
-    
-    <ul class="images">
-      <a href="https://www.youtube.com/watch?v=h2vxQ8Tewok" target="_blank"><li>
-        <img src="/assets/spongebob_tran.png" alt="SpongeBob SquarePants">
-        <span>✨ SpongeBob SquarePants ✨</span></li>
-      <a href="https://www.youtube.com/watch?v=TXg-ocFHFV8" target="_blank"><li><img src="/assets/Mr-krabs_Trans.png" alt="SpongeBob's Boss Mr. Krabs">
-        <span>💰 Mr.Krabs 💰</span></li></a>
-      <a href="https://www.youtube.com/watch?v=uwyRxK0htpI" target="_blank"><li><img src="/assets/Patrick_tran.png" alt="SpongeBob's Best Friend Patrick Star">
-        <span>🪨 Patrick Star 🪨</span></li></a>
-      <a href="https://www.youtube.com/watch?v=ee4SasA12YI" target="_blank"><li><img src="/assets/Squidward_tran.png" alt="SpongeBob's Neighbor Squidward Tentacles">
-        <span>🎶 Squidward Tentacles 🎶</span></li></a>
-      <a href="https://www.youtube.com/watch?v=SMk4T_MkUH0" target="_blank"><li><img src="/assets/Sandy_tran.png" alt="SpongeBob's Friend Sandy Cheeks">
-        <span>🔬 Sandy Cheeks 🔬</span></li></a>
-    </ul>
-    <footer>© 2025 SpongeBob Fansite | Powered by Ada C24 Goofy Goobers ⚡🐙</footer>
-</body>
+    <section class="gallery">
+      <a href="https://www.youtube.com/watch?v=h2vxQ8Tewok" target="_blank">
+        <figure>
+          <img
+            class="gallery-banner"
+            src="/assets/spongebob_tran.png"
+            alt="SpongeBob SquarePants"
+          />
+          <figcaption>SpongeBob SquarePants</figcaption>
+        </figure>
+        </a>
+      <a href="https://www.youtube.com/watch?v=TXg-ocFHFV8" target="_blank">
+        <figure>
+          <img
+            class="gallery-banner"
+            src="/assets/Mr-krabs_Trans.png"
+            alt="SpongeBob's Boss Mr. Krabs"
+          />
+          <figcaption>Mr.Krabs</figcaption>
+        </figure>
+        </a>
+      <a href="https://www.youtube.com/watch?v=uwyRxK0htpI" target="_blank">
+        <figure>
+          <img
+            class="gallery-banner"
+            src="/assets/Patrick_tran.png"
+            alt="SpongeBob's Best Friend Patrick Star"
+          />
+          <figcaption>Patrick Star</figcaption>
+        </figure>
+        </a>
+      <a href="https://www.youtube.com/watch?v=SMk4T_MkUH0" target="_blank">
+        <figure>
+          <img
+            class="gallery-banner"
+            src="/assets/Sandy_tran.png"
+            alt="SpongeBob's Friend Sandy Cheeks"
+          />
+          <figcaption>Sandy Cheeks</figcaption>
+        </figure>
+        </a>
+      <a href="https://www.youtube.com/watch?v=ee4SasA12YI&t=1s" target="_blank">
+        <figure>
+          <img
+            class="gallery-banner"
+            src="/assets/Squidward_tran.png"
+            alt="SpongeBob's Neighbor Squidward Tentacles"
+          />
+          <figcaption>Squidward Tentacles</figcaption>
+        </figure>
+        </a>
+      <a href="https://www.youtube.com/watch?v=9M6D7FnWyow" target="_blank">
+        <figure>
+          <img
+            class="gallery-banner"
+            src="/assets/Plankton-tran.png"
+            alt="SpongeBob's Rival Plankton"
+          />
+          <figcaption>Plankton</figcaption>
+        </figure>
+      </a>
+      <a href="https://www.youtube.com/watch?v=lTQVnq9vZ8E" target="_blank">
+        <figure>
+          <img
+            class="gallery-banner"
+            src="/assets/Gary_tran.png"
+            alt="SpongeBob's Pet Gary the Snail, he's a good boy"
+          />
+          <figcaption>Gary the Snail</figcaption>
+        </figure>
+      </a>
+    </section>
+    <footer>
+      © 2025 SpongeBob Fansite | Powered by Ada C24 Goofy Goobers ⚡🐙
+    </footer>
+    <script>
+      // Bubble Animation Generator
+      for (let i = 0; i < 15; i++) {
+        let bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+        bubble.style.left = Math.random() * window.innerWidth + "px";
+        bubble.style.width = bubble.style.height =
+          10 + Math.random() * 20 + "px";
+        bubble.style.animationDuration = 5 + Math.random() * 5 + "s";
+        document.body.appendChild(bubble);
+      }
+    </script>
+  </body>
 </html>
