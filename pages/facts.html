@@ -134,6 +134,48 @@
         document.body.appendChild(bubble);
     }
     </script>
+    <script>
+    // Highlight the current section in the sidebar using IntersectionObserver
+    (function() {
+      const navLinks = Array.from(document.querySelectorAll('#facts-nav a'));
+      const sections = navLinks
+        .map(a => document.querySelector(a.getAttribute('href')))
+        .filter(Boolean);
+
+      // Click: immediately mark active
+      navLinks.forEach(a => {
+        a.addEventListener('click', () => {
+          navLinks.forEach(n => n.classList.remove('active'));
+          a.classList.add('active');
+        });
+      });
+
+      // Intersection observer to update active state on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            navLinks.forEach(n => n.classList.toggle('active', n.getAttribute('href') === '#' + id));
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.45
+      });
+
+      sections.forEach(s => observer.observe(s));
+
+      // On load, if there's a hash, highlight it
+      if (location.hash) {
+        const link = document.querySelector(`#facts-nav a[href="${location.hash}"]`);
+        if (link) {
+          navLinks.forEach(n => n.classList.remove('active'));
+          link.classList.add('active');
+        }
+      }
+    })();
+    </script>
 </body>
 
 </html>

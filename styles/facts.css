@@ -1,7 +1,7 @@
-
+/* 
     body {
         background-image: none;
-    }
+    } */
     
     #facts-nav {
         list-style: none;
@@ -14,6 +14,13 @@
     #main-timeline {
         background-image: url('../assets/bikini-bottom.png');
         background-size: cover;
+    background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* Ensure the section is tall enough for the background to show */
+        min-height: 60vh;
+        padding: 40px 20px;
     }
     ul {
         list-style: none;
@@ -22,10 +29,25 @@
 
     #lore {
         background-image: url('../assets/all-characters.png');
+                background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* Ensure the section is tall enough for the background to show */
+        min-height: 60vh;
+        padding: 40px 20px;
     }
 
     #random-facts {
         background-image: url('../assets/houses.png');
+        /* Make the image cover the section, centered, and don't repeat it */
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* Ensure the section is tall enough for the background to show */
+        min-height: 60vh;
+        padding: 40px 20px;
     }
 
     .icon {
@@ -52,4 +74,73 @@
     50% { transform: rotate(0deg); }
     75% { transform: rotate(-2deg); }
     100% { transform: rotate(0deg); }
+}
+
+.bubble {
+    background: lightblue;
+}
+
+/* Sidebar layout for facts navigation (desktop) */
+#facts-nav {
+    /* vertical stack */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 12px;
+    position: fixed;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    z-index: 1000;
+}
+
+#facts-nav li a {
+    display: block;
+    padding: 6px 10px;
+    color: #D84315;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#facts-nav li a:hover {
+    background: rgba(216, 67, 21, 0.08);
+    border-radius: 6px;
+}
+
+/* Active state for the current section link */
+#facts-nav li a.active {
+    background: #D84315; /* brand color */
+    color: white;
+    box-shadow: 0 4px 10px rgba(216,67,21,0.25);
+    border-radius: 6px;
+}
+
+/* Keyboard focus state */
+#facts-nav li a:focus {
+    outline: 2px dashed rgba(216,67,21,0.6);
+    outline-offset: 2px;
+}
+
+/* Sidebar overlays content; no content margin is applied so backgrounds stay visually fixed. */
+
+/* Mobile: restore horizontal nav and remove fixed positioning */
+@media (max-width: 699px) {
+    #facts-nav {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    header,
+    section,
+    footer {
+        margin-left: 0;
+    }
 }
