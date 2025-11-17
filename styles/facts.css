@@ -51,8 +51,32 @@ p {
         list-style: none;
         padding: 0;
     } 
+   
+    #spongebob {
+        color: yellow;
+    }
+    #patrick {
+        color: pink;
+    }
+    #mr-Krabs {
+        color: red;
+    }
+    #sandy {
+        color: plum;
+    }
+    #gary {
+        color: lightsalmon;
+    }
+    #squidward {
+        color: lightblue;
+    }
+    #plankton {
+        color: lightgreen;
+    } 
+    #disclaimer {
+        color: orange;
 
- 
+    }
 
     #lore {
         background-image: url('../assets/all-characters.png');
