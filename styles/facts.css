@@ -87,6 +87,7 @@ p {
         /* Ensure the section is tall enough for the background to show */
         min-height: 60vh;
         padding: 40px 20px;
+        min-width: none;
     }
 
     #random-facts {
