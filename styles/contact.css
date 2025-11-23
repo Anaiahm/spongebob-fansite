@@ -66,3 +66,7 @@ button:hover {
     background: #F06292;
     color: white;
 }
+
+.label-bold {
+    font-weight: bold;
+}
