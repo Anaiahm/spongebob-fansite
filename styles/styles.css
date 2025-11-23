@@ -5,7 +5,7 @@ body {
     font-family: 'Comic Sans MS', cursive; /* Fun, playful font */
     text-align: center;
     color: #3E2723;
-    overflow-x: hidden; /* Prevent horizontal scroll from bubbles */
+    overflow-x: hidden; /* Prevent horizontal overflow from layout */
     margin: 0; /* Remove default margin and padding */
     padding: 0;
 }
@@ -76,26 +76,4 @@ footer {
     padding-bottom: 30px;
 }
 
-/* Bubble Animation */
-.bubble {
-    position: fixed;
-    bottom: -60px;
-    width: 25px;
-    height: 25px;
-    background: rgba(0, 162, 255, 0.5);
-    border-radius: 50%;
-    box-shadow: 0 0 12px rgba(0, 162, 255, 0.6); /* Glow effect */
-    z-index: 0; 
-    animation: rise 10s infinite ease-in;
-}
-
-@keyframes rise {
-    0% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-110vh) scale(0.5);
-        opacity: 0;
-    }
-}
+/* Removed bubble animation styles */
