@@ -39,7 +39,7 @@
                 <section class="section contact-form">
                     <h2 id="contact-form-heading">💌 Send a Bubble Message</h2>
                     <p>SpongeBob will read your message right after his jellyfishing break! 🪼✨</p>
-                    <form onsubmit="return submitForm(event)">
+                    <form>
                         <input type="text" placeholder="Your Name" required>
                         <input type="email" placeholder="Your Email" required>
                         <textarea placeholder="Your Message" required></textarea>
@@ -51,25 +51,6 @@
 
         <footer>© 2025 SpongeBob Fansite | Powered by Ada C24 Goofy Goobers ⚡🐙</footer>
 
-    <script>
-
-    // Bubble Animation Generator
-    for (let i = 0; i < 15; i++) {
-        let bubble = document.createElement('div');
-        bubble.classList.add('bubble');
-        bubble.style.left = Math.random() * window.innerWidth + 'px';
-        bubble.style.width = bubble.style.height = 10 + Math.random() * 20 + 'px';
-        bubble.style.animationDuration = 5 + Math.random() * 5 + 's';
-        document.body.appendChild(bubble);
-    }
-
-    // Funny Submit Logic
-    function submitForm(e) {
-        e.preventDefault();
-        alert("🧽 Message sent!\nSpongeBob is probably laughing and showing it to Patrick right now 😂");
-        e.target.reset();
-        return false;
-    }
-    </script>
+    
 </body>
 </html>
