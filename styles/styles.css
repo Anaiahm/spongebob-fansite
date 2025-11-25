@@ -15,7 +15,6 @@ h1 {
     margin-top: 50px;
     text-shadow: 2px 2px 6px #fff;
     animation: floaty 3s ease-in-out infinite;
-    color: #D84315;
 }
 
 /* Floating Animation */
@@ -76,4 +75,3 @@ footer {
     padding-bottom: 30px;
 }
 
-/* Removed bubble animation styles */

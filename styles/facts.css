@@ -1,12 +1,11 @@
 
-    body {
-        text-shadow: 2px 2px 6px black;
+body {
+    text-shadow: 2px 2px 6px black;
+}
 
-    }
-
-    nav {
-        text-shadow: 2px 2px 6px white;
-    }
+nav {
+    text-shadow: 2px 2px 6px white;
+}
 
 /* Make the fav-episodes heading span the full grid and center it */
 #fav-episodes h1 {
@@ -21,8 +20,9 @@ h1 {
     text-shadow: 2px 2px 6px black;
 }
 
-h3 {
+h2 {
     color: orange;
+    font-size: 1.25rem;
 }
 
 p {
@@ -47,83 +47,77 @@ p {
         gap: 20px;
         align-items: start;
     }
-    ul {
-        list-style: none;
-        padding: 0;
-    } 
-   
-    #spongebob {
-        color: yellow;
-    }
-    #patrick {
-        color: pink;
-    }
-    #mr-Krabs {
-        color: red;
-    }
-    #sandy {
-        color: plum;
-    }
-    #gary {
-        color: lightsalmon;
-    }
-    #squidward {
-        color: lightblue;
-    }
-    #plankton {
-        color: lightgreen;
-    } 
-    #disclaimer {
-        color: orange;
+ul {    list-style: none;    padding: 0;} 
 
-    }
+#spongebob {
+    color: yellow;
+}
+#patrick {
+    color: pink;
+}
+#mr-Krabs {
+    color: red;
+}
 
-    #seven-deadly-sins {
-        background-image: url('../assets/all-characters.png');
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* Ensure the section is tall enough for the background to show */
-        min-height: 60vh;
-        padding: 40px 20px;
-        min-width: none;
-    }
+#sandy {
+    color: plum;
+}
 
-    #random-facts {
-        background-image: url('../assets/houses.png');
-        /* Make the image cover the section, centered, and don't repeat it */
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* Ensure the section is tall enough for the background to show */
-        min-height: 60vh;
-        padding: 40px 20px;
-    }
+#gary {
+    color: lightsalmon;
+}
 
-    .icon {
-        width: 30px;
-        height: 30px;
-        vertical-align: middle;
-        margin-right: 10px;
-    }
+#squidward {
+    color: lightblue;
+}
 
-    li {
-        color: white;
- 
-    }
+#plankton {
+    color: lightgreen;
+} 
+
+#disclaimer {
+    color: orange;
+}
+
+#seven-deadly-sins {
+    background-image: url('../assets/all-characters.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    padding: 40px 20px;
+    min-width: none;
+}
+
+#random-facts {
+    background-image: url('../assets/houses.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;      
+    min-height: 60vh;
+    padding: 40px 20px;
+}
+.icon { 
+width: 30px;    
+height: 30px;    
+vertical-align: middle;    
+margin-right: 10px;
+}
+
+li {     
+color: white;
+}
 
 .bubble-glow {
     display: inline-block;
     padding: 10px 16px;
     border-radius: 22px;
 
-    /* Soft yellow underwater bubble background */
     background: rgba(255, 255, 180, 0.30);
     backdrop-filter: blur(3px);
 
-    /* Glow halo */
     box-shadow:
         0 0 8px rgba(255, 255, 255, 0.6),
         0 0 14px rgba(255, 255, 255, 0.4);
@@ -134,13 +128,13 @@ p {
             0 0 14px black; 
 }
 
-    footer {
-        color: white;
-    }
+footer {
+    color: white;
+}
 
-    .h1-image {
-        animation: gentle-rotate 8s ease-in-out infinite;
-    }
+.h1-image {
+    animation: gentle-rotate 8s ease-in-out infinite;
+}
 
 @keyframes gentle-rotate {
     0% { transform: rotate(0deg); }
@@ -160,7 +154,7 @@ p {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    box-shadow: 0 0 12px rgba(0, 162, 255, 0.6); /* Glow effect */
+    box-shadow: 0 0 12px rgba(0, 162, 255, 0.6); 
     z-index: 0; 
     animation: rise 10s infinite ease-in;
 }
@@ -171,7 +165,7 @@ p {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    box-shadow: 0 0 12px rgba(0, 162, 255, 0.6); /* Glow effect */
+    box-shadow: 0 0 12px rgba(0, 162, 255, 0.6); 
     z-index: 0; 
     animation: rise 10s infinite ease-in;
 }
@@ -219,7 +213,6 @@ p {
     outline-offset: 2px;
 }
 
-/* Sidebar overlays content; no content margin is applied so backgrounds stay visually fixed. */
 
 /* Mobile: horizontal nav (already handled above) */
 @media (max-width: 699px) {
